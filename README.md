@@ -1,7 +1,5 @@
 ![PolinRider / Reactime — DPRK supply-chain compromise analysis](assets/banner.png)
 
-# polinrider-reactime-analysis
-
 Analysis and indicators for the **PolinRider** (DPRK-linked) compromise of
 [`open-source-labs/Reactime`](https://github.com/open-source-labs/Reactime), including a
 **previously-unreported Windows persistence component** that injects Electron applications
