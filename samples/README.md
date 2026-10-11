@@ -4,8 +4,13 @@ Live malware is **not** stored in this repository. This directory lists the samp
 hash so they can be matched, retrieved, and verified without this repo redistributing
 executable code.
 
-Retrieve by SHA-256 from **MalwareBazaar** (https://bazaar.abuse.ch/) or match against
-your own telemetry. Full SHA-256 list: [`../SHA256SUMS.txt`](../SHA256SUMS.txt).
+All five samples were submitted to **VirusTotal** on 2026-10-11 and can be looked up by
+SHA-256 at `https://www.virustotal.com/gui/file/<sha256>`. As of first submission every
+one read **0 detections**, which is expected: the strings are hidden behind a custom
+stream cipher (see [`../analysis/string-cipher.md`](../analysis/string-cipher.md)) and the
+two host files are mostly legitimate application code. Match against your own telemetry
+with the rules in [`../rules/`](../rules/) rather than relying on signature AV. Full
+SHA-256 list: [`../SHA256SUMS.txt`](../SHA256SUMS.txt).
 
 | File | SHA-256 | Role |
 |---|---|---|
