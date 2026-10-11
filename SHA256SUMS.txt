@@ -1,0 +1,10 @@
+2bbdcf9ae37d5c5e320a328fcd8402afe474394f433136e39cc133c9686ca9ed  fa-solid-900.woff2 (stage-1 loader, 37717 bytes)
+afdad16c539409d089961c23f8dc2b8df2b01789f4b4657cf4bbfc046622f307  babel.config.js (loader variant, 37856 bytes)
+42ff8df9907110ef87aa15876215f77a3862c42f94d71070a0f16ee1b7a7d223  main.inz.cjs (VS Code backdoor module)
+78f645a6a557327e67810b3568ef12e5aad61ac6aac7c81514e133d34600b978  main.js (modified VS Code entry)
+569798ae1b2b3f07a27a6f328bbb8238b23171669b369412c33ff7625def9c7f  index.js (trojanized Discord core)
+cb6d748a5586c206bd8c3247e4ed4e80fc5382ea8517776c16923d54dc5b0b52  reactime_20261010_214929.pcap (lab network capture)
+
+Loader git blob (identical across all 20 infected branches): f68e0443b0b607be5042b5d24dd425a1a0692769
+
+Samples are not stored in this repo. Retrieve by hash from MalwareBazaar; see samples/README.md.

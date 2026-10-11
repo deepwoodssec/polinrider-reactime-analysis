@@ -1,0 +1,37 @@
+title: PolinRider Reactime C2 Beacon and Exfil
+id: 7a1e9c84-2d3b-4f6a-9c11-polinrider0001
+status: experimental
+description: >
+  Detects network beacon and exfiltration traffic from the PolinRider (DPRK) implant
+  observed in the open-source-labs/Reactime compromise (Windows variant, 2026-10-10).
+  Matches the fixed build/victim tag header, the exfil endpoints, and the hardcoded C2.
+references:
+  - https://github.com/open-source-labs/Reactime/issues/368
+  - https://socket.dev/blog/polinrider-north-korea-linked-supply-chain-campaign-expands
+author: Deep Woods Security
+date: 2026-10-11
+logsource:
+  category: proxy
+detection:
+  selection_header:
+    cs-header|contains: 'Sec-V: A9-0476-3'
+  selection_tag_path:
+    cs-uri-stem|contains: '/verify-human/A9-0476-3'
+  selection_exfil:
+    cs-method: 'POST'
+    cs-uri-stem:
+      - '/u/f'
+      - '/u/e3'
+      - '/snv'
+  selection_c2:
+    dst_ip: '193.247.144.38'
+  condition: selection_header or selection_tag_path or selection_c2 or selection_exfil
+falsepositives:
+  - None expected. The Sec-V header value and the /verify-human/A9-0476-3 path embed a
+    campaign build tag and are not used by legitimate software.
+level: high
+tags:
+  - attack.command_and_control
+  - attack.t1071.001
+  - attack.exfiltration
+  - attack.t1041
