@@ -1,3 +1,5 @@
+![PolinRider / Reactime — DPRK supply-chain compromise analysis](assets/banner.png)
+
 # polinrider-reactime-analysis
 
 Analysis and indicators for the **PolinRider** (DPRK-linked) compromise of
@@ -70,4 +72,6 @@ independent determination. Primary references:
 
 ## Disclosure
 
-Reported to GitHub, CISA, and the FBI. Public advisory filed as Reactime issue #368.
+Reported to GitHub, CISA, and the FBI. Public advisory filed as
+[Reactime issue #368](https://github.com/open-source-labs/Reactime/issues/368):
+*"Security: 20 branches contain malware. Do not open in VS Code or build."*
