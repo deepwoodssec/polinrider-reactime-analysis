@@ -66,7 +66,6 @@ independent determination. Primary references:
 - The Hacker News, *Trojanized npm Packages Employ NullReceiver Tactic* — https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html
 - Sonatype, *Six npm Packages Use Ethereum Transactions to Retrieve Malicious Payloads* — https://www.sonatype.com/blog/six-npm-packages-use-ethereum-transactions-to-retrieve-malicious-payloads
 - SOC Prime, *NullReceiver Hides C2 in Blank Ethereum Transfers* — https://socprime.com/active-threats/nullreceiver-advances-etherhiding-with-blank-crypto-transfers/
-- Upstream advisory: `open-source-labs/Reactime` issue #368 — https://github.com/open-source-labs/Reactime/issues/368
 
 ## Disclosure
 
